@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Demostración</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+
+            <div id="logoImg">
+                <img src="src/logo.png" alt="Logo consultores" sizes="(min-width: 45px) 77px, 50vw" />
+                <a class="navbar-brand" href="#" id="logoName"> Consultores</a>
+            </div>
+            <!-- Menú hamburguesa-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Middle section-->    
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solucionesDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Soluciones</a>
+                        <ul class="dropdown-menu" aria-labelledby="solucionesDropdown">
+                            <li><a class="dropdown-item" href="#">Solución 1</a></li>
+                            <li><a class="dropdown-item" href="#">Solución 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Alianzas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Compañía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Comunidad</a></li>
+                </ul>
+            </div>
+    
+            <!-- Botón "Explorar mapa" -->
+            <a class="btn btn-outline-success explorar-mapa" href="#"><i class="bi bi-geo-alt"></i></i> Explorar mapa</a>
+        </div>
+    </nav>
+
+    <!--Demo Form-->
+
+    <div class="container mt-5" id="formSection">
+        <div class="form-container mb-6" id="formContainer">
+            <!--introduction Text-->
+            <div class="intro">
+                <h1><strong>Solicitar una demostración</strong></h1>
+                <p>Rellene el siguiente formulario y nuestro equipo de ventas se pondrá en contacto con usted en breve.</p>
+            </div>
+            <!--Form-->
+            <form id="demoForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label"> Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="empresa" class="form-label"> Empresa</label>
+                    <input type="text" class="form-control" id="empresa" placeholder="Empresa" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label"> Correo de la empresa</label>
+                    <input type="email" class="form-control" id="correo" placeholder="Correo de la empresa" required>
+                </div>
+                <div class="mb-3">
+                    <label for="servicio" class="form-label"> ¿Qué servicio te
+                        interesa?</label>
+                    <select class="form-select" id="servicio" required>
+                        <option value="">Seleccionar</option>
+                        <option value="1">Servicio 1</option>
+                        <option value="2">Servicio 2</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="comentarios" class="form-label"> ¿Algo que necesites
+                        contarnos?</label>
+                    <textarea class="form-control" id="comentarios" rows="3" placeholder="Comentarios"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom w-100"> Enviar</button>
+            </form>
+        </div>
+        <img src="src/granjero.png" alt="imagen granjero" class="img-fluid" id="imgGranjero">   
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
+
